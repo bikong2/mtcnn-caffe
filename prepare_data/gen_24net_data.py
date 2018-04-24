@@ -10,8 +10,9 @@ im_dir = "WIDER_train/images"
 pos_save_dir = "24/positive"
 part_save_dir = "24/part"
 save_dir = "./24"
-if not os.path.exists(save_dir):
-    os.mkdir(save_dir)
+if not os.path.exists(save_dir): os.mkdir(save_dir)
+if not os.path.exists(pos_save_dir): os.mkdir(pos_save_dir)
+if not os.path.exists(part_save_dir): os.mkdir(part_save_dir)
 f1 = open(os.path.join(save_dir, 'pos_24.txt'), 'w')
 f3 = open(os.path.join(save_dir, 'part_24.txt'), 'w')
 with open(anno_file, 'r') as f:

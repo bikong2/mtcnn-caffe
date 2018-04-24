@@ -11,8 +11,11 @@ pos_save_dir = "12/positive"
 part_save_dir = "12/part"
 neg_save_dir = '12/negative'
 save_dir = "./12"
-if not os.path.exists(save_dir):
-    os.mkdir(save_dir)
+if not os.path.exists(save_dir): os.mkdir(save_dir)
+if not os.path.exists(pos_save_dir): os.mkdir(pos_save_dir)
+if not os.path.exists(part_save_dir): os.mkdir(part_save_dir)
+if not os.path.exists(neg_save_dir): os.mkdir(neg_save_dir)
+
 f1 = open(os.path.join(save_dir, 'pos_12.txt'), 'w')
 f2 = open(os.path.join(save_dir, 'neg_12.txt'), 'w')
 f3 = open(os.path.join(save_dir, 'part_12.txt'), 'w')
